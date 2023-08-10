@@ -1,0 +1,17 @@
+---
+
+- name: Install Misc Packages
+  hosts: all
+  become: true
+  tasks:
+    - name: Install packages
+      ansible.builtin.apt:
+        name:
+          - snapd
+          - neofetch
+        state: present
+    - name: Install snaps
+      community.general.snap:
+        name:
+          - btop
+        state: present
