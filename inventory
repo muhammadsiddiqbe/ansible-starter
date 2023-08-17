@@ -1,9 +1,5 @@
-[all:vars]
-ansible_connection = ssh
-ansible_user = rimuwu
+[vm-instances]
 
-[all]
-rimuwupi.local
+root@10.100.1.110
 
-[rpi]
-rimuwupi.local
+[databases]
